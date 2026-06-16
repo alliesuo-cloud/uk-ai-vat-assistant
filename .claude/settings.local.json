@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(Get-ChildItem -Recurse -File | Where-Object { $_.FullName -notmatch 'node_modules' } | ForEach-Object { $_.FullName.Replace\\(\"$PWD\\\\\",\"\"\\) })",
-      "PowerShell(gh --version)",
-      "PowerShell(gh auth status)"
-    ]
-  }
-}
